@@ -1,8 +1,9 @@
 import pytest
-from prestamo import Prestamo
+from solucion.prestamo import Prestamo
 
 # si dias de retraso es 6, 6-7=0 entonces assert p1.dias_de_retraso() == 0 es TRUE
 def test_prestamo_en_termino():
+    
     p1 = Prestamo("El senor de los anillos", "Frodo", 6)
     assert p1.esta_vencido() == False
     assert p1.dias_de_retraso() == 0
