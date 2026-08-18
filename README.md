@@ -38,3 +38,10 @@ Evidencia a entregar
 solucion/prestamo.py con la clase.
 tests/test_prestamo.py con al menos cuatro tests: préstamo en término, préstamo vencido, retraso cero y un dato inválido.
 Una respuesta breve (3 a 5 líneas): ¿qué regla quedó dentro de Prestamo y qué problema habría si la calculara quien usa el objeto?
+
+
+
+RESPUESTA FINAL:
+Dentro de Prestamo quedó la regla de los 7 días límite y la cuenta para saber si está vencido y cuántos días de demora lleva.
+
+Si ese cálculo se hiciera por fuera, estaríamos desparramando la lógica por todo el sistema y rompiendo el encapsulamiento. El gran problema sería el mantenimiento: si mañana la biblioteca decide cambiar el plazo a 14 días, tendríamos que buscar y corregir esa cuenta en diez lugares distintos del código en vez de modificar un solo número dentro de la clase.
